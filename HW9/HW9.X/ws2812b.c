@@ -95,7 +95,7 @@ void ws2812b_setColor(wsColor * c, int numLEDs) {
     for (i = 1; i < numBits; i++) {
         while (TMR2 < delay_times[i]) {
         }
-        LATBINV = 0b1000000; // invert B6
+        LATBINV = 0b100; // invert B2
     }
     LATBbits.LATB2 = 0;
     TMR2 = 0;

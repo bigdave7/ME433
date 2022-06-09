@@ -43,7 +43,6 @@
 
 void ws2812b_setup();
 void ws2812b_setColor(wsColor * c, int numLEDs);
-wsColor HSBtoRGB(float hue, float sat, float brightness);
 void blink();
 
 int main(){
