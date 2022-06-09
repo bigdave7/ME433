@@ -84,7 +84,7 @@ int main(){
         blink();
         for (k = 0; k <= 360; k++) {
           for (m = 0; m <= 3; m++){
-            c[m]= HSBtoRGB(((60*m)+k)%360 , 1 , 0.5);//% is MOD, which means /360 and keep the remainder
+            c[m]= HSBtoRGB(((60*m)+k)%360, 1, 0.5);//% is MOD, which means /360 and keep the remainder
             ws2812b_setColor(c, 4);
         }
           _CP0_SET_COUNT(0);
